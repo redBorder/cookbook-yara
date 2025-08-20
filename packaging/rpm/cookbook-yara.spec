@@ -55,5 +55,5 @@ fi
 %doc
 
 %changelog
-* Wed Aug 06 2025 Daniel Castro <dcastro@redborder.com>
+* Thu Aug 14 2025 Pablo Torres <ptorres@redborder.com>
 - Create yara cookbook
