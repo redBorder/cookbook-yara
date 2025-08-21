@@ -23,7 +23,6 @@ action :remove do
       action :remove
     end
 
-
     Chef::Log.info('Yara cookbook has been processed')
   rescue => e
     Chef::Log.error(e.message)
