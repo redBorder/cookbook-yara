@@ -1,6 +1,11 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.0.2
+
+  - Pablo Torres
+    - Update Changelog
+
 ## 0.0.1
 
   - Pablo Torres
