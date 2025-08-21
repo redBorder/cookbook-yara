@@ -7,7 +7,6 @@ cookbook-yara CHANGELOG
     - COMMIT_REF Initial release of cookbook-yara
 
 - - -
-This file is used to list changes made in each version of the example cookbook.
 
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
