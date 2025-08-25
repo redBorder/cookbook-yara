@@ -1,0 +1,25 @@
+general:
+  high: <%= node["redborder"]["manager"]["yara"]["severity"]["scores"]["high"] %>
+  medium: <%= node["redborder"]["manager"]["yara"]["severity"]["scores"]["medium"] %>
+  low: <%= node["redborder"]["manager"]["yara"]["severity"]["scores"]["low"] %>
+
+high:
+  high_lower_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["high"]["high_lower_threshold"] %>
+  low_upper_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["high"]["low_upper_threshold"] %>
+  high_score: <%= node["redborder"]["manager"]["yara"]["severity"]["high"]["high_score"] %>
+  medium_score: <%= node["redborder"]["manager"]["yara"]["severity"]["high"]["medium_score"] %>
+  low_score: <%= node["redborder"]["manager"]["yara"]["severity"]["high"]["low_score"] %>
+
+medium:
+  high_lower_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["medium"]["high_lower_threshold"] %>
+  low_upper_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["medium"]["low_upper_threshold"] %>
+  high_score: <%= node["redborder"]["manager"]["yara"]["severity"]["medium"]["high_score"] %>
+  medium_score: <%= node["redborder"]["manager"]["yara"]["severity"]["medium"]["medium_score"] %>
+  low_score: <%= node["redborder"]["manager"]["yara"]["severity"]["medium"]["low_score"] %>
+
+low:
+  high_lower_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["low"]["high_lower_threshold"] %>
+  low_upper_threshold: <%= node["redborder"]["manager"]["yara"]["severity"]["low"]["low_upper_threshold"] %>
+  high_score: <%= node["redborder"]["manager"]["yara"]["severity"]["low"]["high_score"] %>
+  medium_score: <%= node["redborder"]["manager"]["yara"]["severity"]["low"]["medium_score"]  %>
+  low_score: <%= node["redborder"]["manager"]["yara"]["severity"]["low"]["low_score"] %>
