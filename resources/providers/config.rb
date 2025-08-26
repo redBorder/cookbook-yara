@@ -17,14 +17,7 @@ action :add do
       action :create
     end
 
-    # Uncomment when rb-sequence-oozie is merged
-    # directory '/var/rb-sequence-oozie/workflow/lib/yara_rules' do
-    #   owner 'root'
-    #   group 'root'
-    #   mode '0755'
-    #   action :create
-    # end
-
+    
     # Uncomment when rb-sequence-oozie is merged
     # template '/var/rb-sequence-oozie/workflow/yara_loader.yml' do
     #   cookbook 'yara'
@@ -35,7 +28,15 @@ action :add do
     #   retries 2
     #   # notifies :restart, 'service[rb-sequence-oozie]'
     # end
-
+    
+    # Uncomment when rb-sequence-oozie is merged
+    # directory '/var/rb-sequence-oozie/workflow/lib/yara_rules' do
+    #   owner 'root'
+    #   group 'root'
+    #   mode '0755'
+    #   action :create
+    # end
+    
     # Uncomment when rb-sequence-oozie is merged
     # yara_files = %w(APT_NGO_wuaclt.yara APT_NGO_wuaclt_PDF.yara GeorBotBinary.yara GeorBotMemory.yara 
     #   UserDB.yara avdetect.yara compiler.yara dbgdetect.yara epcompilersigs.yara eppackersigs.yara 
