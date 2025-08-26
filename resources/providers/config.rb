@@ -37,10 +37,10 @@ action :add do
     # end
 
     # Uncomment when rb-sequence-oozie is merged
-    yara_files = %w(APT_NGO_wuaclt.yara APT_NGO_wuaclt_PDF.yara GeorBotBinary.yara GeorBotMemory.yara
-      UserDB.yara avdetect.yara compiler.yara dbgdetect.yara epcompilersigs.yara eppackersigs.yara
-      malicious_document.yar malware.yar packer.yara packers.yara sandboxdetect.yara userdb_exeinfope.yara
-      userdb_jclausing.yara userdb_panda.yara vmdetect.yara)
+    # yara_files = %w(APT_NGO_wuaclt.yara APT_NGO_wuaclt_PDF.yara GeorBotBinary.yara GeorBotMemory.yara
+    #   UserDB.yara avdetect.yara compiler.yara dbgdetect.yara epcompilersigs.yara eppackersigs.yara
+    #   malicious_document.yar malware.yar packer.yara packers.yara sandboxdetect.yara userdb_exeinfope.yara
+    #   userdb_jclausing.yara userdb_panda.yara vmdetect.yara)
 
     # yara_files.each do | yara_file |
     #   cookbook_file "/var/rb-sequence-oozie/workflow/lib/yara_rules/#{yara_file}" do
