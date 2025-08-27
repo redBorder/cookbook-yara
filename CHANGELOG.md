@@ -1,6 +1,22 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.0.3
+
+  - manegron
+    - [b33a99a] Merge pull request #5 from redBorder/improvement/#22559_add_config_to_yara
+    - [874a0fa] Fix Makefile
+  - Pablo Torres
+    - [006bd8b] Improvement #22559: Fix lint 6
+    - [ad1ba33] Improvement #22559: Fix lint 5
+    - [5a78899] Improvement #22559: Fix lint 4
+    - [566d0e1] Improvement #22559: Change creation order
+    - [58b8bdf] Improvement #22559: Add yara rules
+    - [a021d8c] Improvement #22559: Fix lint 3
+    - [f41df73] Improvement #22559: Fix lint 2
+    - [f7d8fe7] Improvement #22559: Fix lint
+    - [1975897] Improvement #22559: Create yara_rules folder, node attributes and yara_loader file
+
 ## 0.0.2
 
   - Pablo Torres
