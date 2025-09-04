@@ -1,6 +1,11 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.0.4
+
+  - Rafael Gomez
+    - [add023d] Remove yara_rules directory from cookbook yara
+
 ## 0.0.3
 
   - manegron
