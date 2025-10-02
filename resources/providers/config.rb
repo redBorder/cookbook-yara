@@ -1,6 +1,8 @@
 # Cookbook:: yara
 # Provider:: config
 
+unified_mode true
+
 include Yara::Helper
 
 action :add do
@@ -48,23 +50,15 @@ action :add do
     #   end
     # end
 
-    # Copiar todas las reglas YARA desde el cookbook hacia el nodo
-    remote_directory "/tmp/yara_rules_src" do
-      source "yara"
-      files_owner "root"
-      files_group "root"
-      files_mode "0644"
+    # Copy all YARA rules from the cookbook to the node
+    remote_directory '/tmp/yara_rules_src' do
+      source 'yara'
+      files_owner 'root'
+      files_group 'root'
+      files_mode '0644'
       cookbook 'yara'
       purge true
       action :create
-    end
-
-    # Empaquetar todas las reglas copiadas en un tar.gz
-    execute "package_yara_rules" do
-      cwd "/tmp/yara_rules_src"
-      command "tar czf /tmp/yara_rules.tar.gz *.yar *.yara"
-      creates "/tmp/yara_rules.tar.gz"
-      action :run
     end
 
     Chef::Log.info('Yara cookbook has been processed')
