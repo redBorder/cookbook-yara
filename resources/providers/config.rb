@@ -48,6 +48,18 @@ action :add do
     #   end
     # end
 
+    # Copy all YARA rules from the cookbook to the node
+    remote_directory '/tmp/yara_rules_src' do
+      source 'yara'
+      files_owner 'root'
+      files_group 'root'
+      files_mode '0644'
+      cookbook 'yara'
+      purge true
+      action :create
+      sensitive true
+    end
+
     Chef::Log.info('Yara cookbook has been processed')
   rescue => e
     Chef::Log.error(e.message)
