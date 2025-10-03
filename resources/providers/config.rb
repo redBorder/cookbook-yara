@@ -1,8 +1,6 @@
 # Cookbook:: yara
 # Provider:: config
 
-unified_mode true
-
 include Yara::Helper
 
 action :add do
