@@ -1,6 +1,11 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.1.0
+
+  - vimesa
+    - [67f2506] Add yara rules and copy them to /tmp/yara_rules_src
+
 ## 0.0.4
 
   - Rafael Gomez
