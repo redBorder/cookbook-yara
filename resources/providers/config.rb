@@ -59,6 +59,7 @@ action :add do
       cookbook 'yara'
       purge true
       action :create
+      sensitive true
     end
 
     Chef::Log.info('Yara cookbook has been processed')
