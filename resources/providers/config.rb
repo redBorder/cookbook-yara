@@ -10,16 +10,15 @@ action :add do
       action :upgrade
     end
 
-    # Uncomment when rb-sequence-oozie is merged
-    # template '/var/rb-sequence-oozie/workflow/yara_loader.yml' do
-    #   cookbook 'yara'
-    #   source 'yara_loader.yml.erb'
-    #   owner 'root'
-    #   group 'root'
-    #   mode '0644'
-    #   retries 2
-    #   # notifies :restart, 'service[rb-sequence-oozie]'
-    # end
+    template '/var/www/rb-rails/config/yara_loader.yml' do
+      cookbook 'yara'
+      source 'yara_loader.yml.erb'
+      owner 'root'
+      group 'root'
+      mode '0644'
+      retries 2
+      # notifies :restart, 'service[rb-sequence-oozie]'
+    end
 
     # Uncomment when rb-sequence-oozie is merged
     # directory '/var/rb-sequence-oozie/workflow/lib/yara_rules' do
