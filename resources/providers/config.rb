@@ -9,7 +9,7 @@ action :add do
       action :upgrade
     end
 
-    template '/var/www/rb-rails/config/yara_loader.yml' do
+    template '/usr/share/logstash/yara_loader.yml' do
       cookbook 'yara'
       source 'yara_loader.yml.erb'
       owner 'root'
