@@ -1,6 +1,12 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.1.1
+
+  - Pablo Pérez
+    - [7080fa5] Update yara loader path so not dependent of webui
+    - [abe8d48] remove legacy code
+
 ## 0.1.0
 
   - vimesa
