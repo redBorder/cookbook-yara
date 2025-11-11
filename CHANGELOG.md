@@ -1,7 +1,7 @@
 cookbook-yara CHANGELOG
 ===============
 
-## 0.1.1
+## 0.2.0
 
   - Pablo Pérez
     - [7080fa5] Update yara loader path so not dependent of webui
