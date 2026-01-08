@@ -16,6 +16,7 @@ action :add do
       group 'root'
       mode '0644'
       retries 2
+      only_if { ::Dir.exist?('/usr/share/logstash') }
       # notifies :restart, 'service[rb-sequence-oozie]'
     end
 
