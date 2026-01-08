@@ -1,6 +1,11 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.2.1
+
+  - Rafael Gomez
+    - [37017b6] Execute template if /usr/share/logstash directory exists
+
 ## 0.2.0
 
   - Pablo Pérez
