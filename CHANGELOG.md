@@ -1,6 +1,11 @@
 cookbook-yara CHANGELOG
 ===============
 
+## 0.2.2
+
+  - manegron
+    - [5a4df51] Upload cookbook only if opscode-erchef is active
+
 ## 0.2.1
 
   - Rafael Gomez
