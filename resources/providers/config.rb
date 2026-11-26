@@ -9,14 +9,14 @@ action :add do
       action :upgrade
     end
 
-    template '/usr/share/logstash/yara_loader.yml' do
+    template '/usr/share/redborder-vortex/yara_loader.yml' do
       cookbook 'yara'
       source 'yara_loader.yml.erb'
       owner 'root'
       group 'root'
       mode '0644'
       retries 2
-      only_if { ::Dir.exist?('/usr/share/logstash') }
+      only_if { ::Dir.exist?('/usr/share/redborder-vortex') }
       # notifies :restart, 'service[rb-sequence-oozie]'
     end
 
